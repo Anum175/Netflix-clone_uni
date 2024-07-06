@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix - Finish Setting Up Your Account</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../CSS/accounts.css" rel="stylesheet">
+  <link href="../CSS/plans.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .text-center {
+      background: linear-gradient(45deg, blue, purple, red);
+      color: white;
+      padding: 10px;
+      border-radius: 9px;
+      width: 100%;
+    }
+
+   
+    .gradient-text {
+      background: linear-gradient(45deg, #ff5722, #f44336);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      padding: 5px;
+    }
+
+    .panel-body {
+      padding: 20px;
+    }
+
+    .ok-icon {
+      display: none;
+      color: white;
+    }
+
+    .selected .ok-icon {
+      display: block;
+    }
+
+    ul.list-unstyled {
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.list-unstyled li {
+      margin-bottom: 10px;
+    }
+
+    hr {
+      margin: 10px 0;
+      border: 0;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../images/log.png" alt="Netflix Logo" class="d-inline-block align-text-top ms-0" style="margin-left: 5%; margin-top: 2%; width: 170px;">
+      </a>
+      <a class="btn btn-link btn-dark ms-auto" href="index.html">Sign Out</a>
+    </div>
+  </nav>
+  <hr>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3" onclick="selectPlan(this)">
+          <div class="panel-heading premium-heading text-center-gradient">Most Popular</div>
+          <div class="panel panel-default">
+            <div class="panel-body">
+                
+                <h3 class="text-center" style="background-color: #e509;">Premium<br>4K + HDR</h3>
+              <ul class="list-unstyled">
+                <li>Monthly price<br>Rs 1,100</li>
+                <hr>
+                <li>Video and sound quality<br> Best</li>
+                <hr>
+                <li>Resolution<br> 4K (Ultra HD) + HDR</li>
+                <hr>
+                <li>Spatial audio (immersive sound)<br> Included</li>
+                <hr>
+                <li>Supported devices<br> TV, computer, mobile phone, tablet</li>
+                <hr>
+                <li>Devices your household can watch at the same time<br> 4</li>
+                <hr>
+                <li>Download devices<br> 4</li>
+                <hr>
+              </ul>
+              <i class="fas fa-check-circle ok-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" onclick="selectPlan(this)">
+          <div class="panel panel-default">
+            <div class="panel-body">
+                <h3 class="text-center">Standard <br> 1080p</h3>
+                
+              <ul class="list-unstyled">
+                <li>Monthly price<br>Rs 800</li>
+                <hr>
+                <li>Video and sound quality<br> Great</li>
+                <hr>
+                <li>Resolution<br> 1080p (Full HD)</li>
+                <hr>
+                <li>Supported devices<br> TV, computer, mobile phone, tablet</li>
+                <hr>
+                <li>Devices your household can watch at the same time<br> 2</li>
+                <hr>
+                <li>Download devices<br> 2</li>
+                <hr>
+              </ul>
+              <i class="fas fa-check-circle ok-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" onclick="selectPlan(this)">
+          <div class="panel panel-default">
+            <div class="panel-body">
+                <h3 class="text-center">Basic <br>720p</h3>
+                
+              <ul class="list-unstyled">
+                <li>Monthly price<br>Rs 450</li>
+                <hr>
+                <li>Video and sound quality<br> Good</li>
+                <hr>
+                <li>Resolution<br> 720p (HD)</li>
+                <hr>
+                <li>Supported devices<br> TV, computer, mobile phone, tablet</li>
+                <hr>
+                <li>Devices your household can watch at the same time<br> 1</li>
+                <hr>
+                <li>Download devices<br> 1</li>
+                <hr>
+              </ul>
+              <i class="fas fa-check-circle ok-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" onclick="selectPlan(this)">
+          <div class="panel panel-default">
+            <div class="panel-body">
+                <h3 class="text-center">Mobile <br> 480p</h3>
+                
+              <ul class="list-unstyled">
+                <li>Monthly price<br>Rs 250</li>
+                <hr>
+                <li>Video and sound quality<br> Fair</li>
+                <hr>
+                <li>Resolution<br> 480p</li>
+                <hr>
+                <li>Supported devices<br> Mobile phone, tablet</li>
+                <hr>
+                <li>Devices your household can watch at the same time<br> 1</li>
+                <hr>
+                <li>Download devices<br> 1</li>
+                <hr>
+              </ul>
+              <i class="fas fa-check-circle ok-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-next">Next</button>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="questions">
+        Questions? Contact us.
+    </div>
+    <div class="footer">
+        <div class="footer-item">
+            <a href="#">FAQ</a>
+            <a href="#">Privacy</a>
+        </div>
+        <div class="footer-item">
+            <a href="#">Help Center</a>
+            <a href="#">Cookie Preferences</a>
+        </div>
+        <div class="footer-item">
+            <a href="#">Netflix Shop</a>
+            <a href="#">Corporate Information</a>
+        </div>
+        <div class="footer-item">
+            <a href="#">Terms of Use</a>
+        </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    function selectPlan(element) {
+      var panels = document.getElementsByClassName('col-md-3');
+      for (var i = 0; i < panels.length; i++) {
+        panels[i].classList.remove('selected');
+        panels[i].querySelector('.ok-icon').style.display = 'none'; // Hide all "ok" icons
+      }
+      element.classList.add('selected');
+      element.querySelector('.ok-icon').style.display = 'block'; // Show "ok" icon for the selected plan
+    }
+  </script>
+</body>
+</html>
