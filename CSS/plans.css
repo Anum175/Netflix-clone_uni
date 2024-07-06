@@ -56,18 +56,6 @@
         background-color: #444;
         color: white;
       }
-      .panel-body {
-        padding: 20px;
-        flex: 1;
-      }
-      .list-unstyled {
-        padding-left: 0;
-        list-style: none;
-      }
-      .list-unstyled li {
-        padding: 5px 0;
-        font-size: 14px;
-      }
       .btn-next {
         background-color: #e50914;
         color: white;
@@ -79,18 +67,56 @@
       .btn-next:hover {
         background-color: #d40813;
       }
-      .ok-icon {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 24px;
-        color: #e509;
-        display: none; /* Initially hide the "ok" icon */
-      }
+      
       /* Remove border on hover */
       .col-md-3:hover .panel {
         border: none;
       }
 
-      
-      
+    .text-center {
+      background: linear-gradient(45deg, blue, purple, red);
+      color: white;
+      padding: 10px;
+      border-radius: 9px;
+      width: 100%;
+    }
+
+   
+    .gradient-text {
+      background: linear-gradient(45deg, #ff5722, #f44336);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      padding: 5px;
+    }
+
+    .panel-body {
+      padding: 20px;
+    }
+
+    .ok-icon {
+      display: none;
+      color: red;
+    }
+
+    .selected .ok-icon {
+      display: block;
+    }
+
+    ul.list-unstyled {
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.list-unstyled li {
+      margin-bottom: 10px;
+    }
+
+    hr {
+      margin: 10px 0;
+      border: 0;
+      border-top: 1px solid #ccc;
+    }
+      p{
+        font-size: 14px;
+      }

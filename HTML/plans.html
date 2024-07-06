@@ -8,52 +8,7 @@
   <link href="../CSS/accounts.css" rel="stylesheet">
   <link href="../CSS/plans.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    .text-center {
-      background: linear-gradient(45deg, blue, purple, red);
-      color: white;
-      padding: 10px;
-      border-radius: 9px;
-      width: 100%;
-    }
-
-   
-    .gradient-text {
-      background: linear-gradient(45deg, #ff5722, #f44336);
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-      padding: 5px;
-    }
-
-    .panel-body {
-      padding: 20px;
-    }
-
-    .ok-icon {
-      display: none;
-      color: white;
-    }
-
-    .selected .ok-icon {
-      display: block;
-    }
-
-    ul.list-unstyled {
-      padding: 0;
-      margin: 0;
-    }
-
-    ul.list-unstyled li {
-      margin-bottom: 10px;
-    }
-
-    hr {
-      margin: 10px 0;
-      border: 0;
-      border-top: 1px solid #ccc;
-    }
-  </style>
+  
 </head>
 <body>
   <!-- Navbar -->
@@ -66,10 +21,15 @@
     </div>
   </nav>
   <hr>
-
+  <div class="container" style="margin: 0%;">
+  <h4 class="text-uppercase"> step 2 of 3</h4>
+  <h1>Choose the plan that’s right for you</h1>
+</div>
   <!-- Main Content -->
   <div class="main-content">
-    <div class="container">
+    
+    <div class="container-fluid">
+
       <div class="row">
         <div class="col-md-3" onclick="selectPlan(this)">
           <div class="panel-heading premium-heading text-center-gradient">Most Popular</div>
@@ -167,6 +127,10 @@
           </div>
         </div>
       </div>
+      <p>HD (720p), Full HD (1080p), Ultra HD (4K) and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions. See our <a href="#" style="color: blue;">Terms of Use</a>a for more details.
+    </p>
+    <p>Only people who live with you may use your account. Watch on 4 different devices at the same time with Premium, 2 with Standard, and 1 with Basic and Mobile.
+    </p>
       <button type="submit" class="btn btn-next">Next</button>
     </div>
   </div>
